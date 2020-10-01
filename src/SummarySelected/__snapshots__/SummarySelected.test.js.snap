@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SummarySelected /> renders empty when no props supplied 1`] = `
+<div
+  className="summary__option"
+>
+  <div
+    className="summary__option__label"
+  >
+     
+  </div>
+  <div
+    className="summary__option__value"
+  />
+  <div
+    className="summary__option__cost"
+  >
+    $NaN
+  </div>
+</div>
+`;
+
+exports[`<SummarySelected /> renders selected option when props are supplied 1`] = `
+<div
+  className="summary__option"
+>
+  <div
+    className="summary__option__label"
+  >
+    Display
+     
+  </div>
+  <div
+    className="summary__option__value"
+  >
+    15.6" UHD (3840 x 2160) 60Hz Bright Lights and Knobs
+  </div>
+  <div
+    className="summary__option__cost"
+  >
+    $1,500.00
+  </div>
+</div>
+`;

@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import USCurrencyFormat from '../USCurrencyFormat'
 
-import '../App.css'
+import './SummarySelected.css'
 
 class SummarySelected extends Component {
-  render() {
-    const featureHash = this.props.feature + '-' + this.props.idx;
-    const selectedOption = this.props.selectedOption;
+  static defaultProps = {
+    feature: [],
+    selectedOption: {}
+  };
 
+  render() {
+    const selectedOption = this.props.selectedOption;
     return (
-      <div className="summary__option" key={featureHash} >
+      <div className="summary__option" >
         <div className="summary__option__label">{this.props.feature} </div>
         <div className="summary__option__value">{selectedOption.name}</div>
         <div className="summary__option__cost">

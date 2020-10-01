@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders App with form and summary when props are supplied 1`] = `
+<div
+  className="App"
+>
+  <header>
+    <h1>
+      ELF Computing | Laptops
+    </h1>
+  </header>
+  <main>
+    <CustomizerForm
+      features={
+        Object {
+          "Display": Array [
+            Object {
+              "cost": 1500,
+              "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+            },
+            Object {
+              "cost": 1400,
+              "name": "15.3\\" HGTV (3840 x 2160) Home makeover edition",
+            },
+          ],
+          "Operating System": Array [
+            Object {
+              "cost": 200,
+              "name": "Ubuntu Linux 16.04",
+            },
+            Object {
+              "cost": 300,
+              "name": "Bodhi Linux",
+            },
+          ],
+          "Processor": Array [
+            Object {
+              "cost": 700,
+              "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+            },
+            Object {
+              "cost": 1200,
+              "name": "Professor X AMD Fire Breather with sidewinder technology",
+            },
+          ],
+          "Video Card": Array [
+            Object {
+              "cost": 1150.98,
+              "name": "Toyota Corolla 1.5v",
+            },
+            Object {
+              "cost": 1345,
+              "name": "Mind mild breeze 2000",
+            },
+          ],
+        }
+      }
+      selected={
+        Object {
+          "Display": Object {
+            "cost": 1500,
+            "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+          },
+          "Operating System": Object {
+            "cost": 200,
+            "name": "Ubuntu Linux 16.04",
+          },
+          "Processor": Object {
+            "cost": 700,
+            "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+          },
+          "Video Card": Object {
+            "cost": 1150.98,
+            "name": "Toyota Corolla 1.5v",
+          },
+        }
+      }
+      updateFeature={[Function]}
+    />
+    <Summary
+      selected={
+        Object {
+          "Display": Object {
+            "cost": 1500,
+            "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+          },
+          "Operating System": Object {
+            "cost": 200,
+            "name": "Ubuntu Linux 16.04",
+          },
+          "Processor": Object {
+            "cost": 700,
+            "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+          },
+          "Video Card": Object {
+            "cost": 1150.98,
+            "name": "Toyota Corolla 1.5v",
+          },
+        }
+      }
+    />
+  </main>
+</div>
+`;
+
+exports[`<App /> renders App with last option from multiple features in Summary 1`] = `
+<div
+  className="App"
+>
+  <header>
+    <h1>
+      ELF Computing | Laptops
+    </h1>
+  </header>
+  <main>
+    <CustomizerForm
+      features={
+        Object {
+          "Display": Array [
+            Object {
+              "cost": 1500,
+              "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+            },
+            Object {
+              "cost": 1400,
+              "name": "15.3\\" HGTV (3840 x 2160) Home makeover edition",
+            },
+          ],
+          "Operating System": Array [
+            Object {
+              "cost": 200,
+              "name": "Ubuntu Linux 16.04",
+            },
+            Object {
+              "cost": 300,
+              "name": "Bodhi Linux",
+            },
+          ],
+          "Processor": Array [
+            Object {
+              "cost": 700,
+              "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+            },
+            Object {
+              "cost": 1200,
+              "name": "Professor X AMD Fire Breather with sidewinder technology",
+            },
+          ],
+          "Video Card": Array [
+            Object {
+              "cost": 1150.98,
+              "name": "Toyota Corolla 1.5v",
+            },
+            Object {
+              "cost": 1345,
+              "name": "Mind mild breeze 2000",
+            },
+          ],
+        }
+      }
+      selected={
+        Object {
+          "Display": Object {
+            "cost": 1500,
+            "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+          },
+          "Operating System": Object {
+            "cost": 200,
+            "name": "Ubuntu Linux 16.04",
+          },
+          "Processor": Object {
+            "cost": 700,
+            "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+          },
+          "Video Card": Object {
+            "cost": 1150.98,
+            "name": "Toyota Corolla 1.5v",
+          },
+        }
+      }
+      updateFeature={[Function]}
+    />
+    <Summary
+      selected={
+        Object {
+          "Display": Object {
+            "cost": 1500,
+            "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+          },
+          "Operating System": Object {
+            "cost": 200,
+            "name": "Ubuntu Linux 16.04",
+          },
+          "Processor": Object {
+            "cost": 700,
+            "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+          },
+          "Video Card": Object {
+            "cost": 1150.98,
+            "name": "Toyota Corolla 1.5v",
+          },
+        }
+      }
+    />
+  </main>
+</div>
+`;
+
+exports[`<App /> renders empty when no props supplied 1`] = `
+<div
+  className="App"
+>
+  <header>
+    <h1>
+      ELF Computing | Laptops
+    </h1>
+  </header>
+  <main>
+    <CustomizerForm
+      features={Array []}
+      selected={
+        Object {
+          "Display": Object {
+            "cost": 1500,
+            "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+          },
+          "Operating System": Object {
+            "cost": 200,
+            "name": "Ubuntu Linux 16.04",
+          },
+          "Processor": Object {
+            "cost": 700,
+            "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+          },
+          "Video Card": Object {
+            "cost": 1150.98,
+            "name": "Toyota Corolla 1.5v",
+          },
+        }
+      }
+      updateFeature={[Function]}
+    />
+    <Summary
+      selected={
+        Object {
+          "Display": Object {
+            "cost": 1500,
+            "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+          },
+          "Operating System": Object {
+            "cost": 200,
+            "name": "Ubuntu Linux 16.04",
+          },
+          "Processor": Object {
+            "cost": 700,
+            "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+          },
+          "Video Card": Object {
+            "cost": 1150.98,
+            "name": "Toyota Corolla 1.5v",
+          },
+        }
+      }
+    />
+  </main>
+</div>
+`;

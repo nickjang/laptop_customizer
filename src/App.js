@@ -5,6 +5,10 @@ import Summary from './Summary/Summary';
 import './App.css';
 
 class App extends Component {
+  static defaultProps = {
+    features: []
+  };
+
   state = {
     selected: {
       Processor: {

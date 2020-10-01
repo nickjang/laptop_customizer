@@ -2,16 +2,24 @@ import React, { Component } from 'react';
 import FormFeatureOption from '../FormFeatureOption/FormFeatureOption';
 import slugify from 'slugify';
 
-import '../App.css'
+import './FormFeature.css'
 
 class FormFeature extends Component {
+  static defaultProps = {
+    idx: 0,
+    featureName: '',
+    feature: [],
+    updateFeature: () => {},
+    selectedFeatureName: ''
+  }
+
   render() {
     const featureHash = this.props.featureName + '-' + this.props.idx;
     const options = this.props.feature.map(item => {
       const itemHash = slugify(JSON.stringify(item));
       return (
         <FormFeatureOption key={itemHash} itemHash={itemHash} feature={this.props.featureName} item={item}
-          selectedFeatureName={this.props.selectedFeatureName} updateFeature={this.props.updateFeature}/>
+          selectedFeatureName={this.props.selectedFeatureName} updateFeature={this.props.updateFeature} />
       );
     });
 

@@ -2,9 +2,20 @@ import React, { Component } from 'react';
 import slugify from 'slugify';
 import USCurrencyFormat from '../USCurrencyFormat';
 
-import '../App.css'
+import './FormFeatureOption.css'
 
 class FormFeatureOption extends Component {
+  static defaultProps = {
+    itemHash: '',
+    feature: '',
+    item: {
+      name: '',
+      cost: 0
+    },
+    selectedFeatureName: '',
+    updateFeature: () => {return}
+  };
+
   render() {
     return (
       <div className="feature__item">

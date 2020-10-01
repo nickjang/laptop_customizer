@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import FormFeature from '../FormFeature/FormFeature';
 
-import '../App.css'
+import './CustomizerForm.css'
 
 class CustomizerForm extends Component {
+  static defaultProps = {
+    features: {},
+    selected: {} ,
+    updateFeature: () => {}
+  }
+  
   render() {
     const features = Object.keys(this.props.features).map((feature, idx) => {
       const featureHash = feature + '-' + idx;

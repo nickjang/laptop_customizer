@@ -2,12 +2,17 @@ import React, { Component } from 'react';
 import SummarySelected from '../SummarySelected/SummarySelected';
 import USCurrencyFormat from '../USCurrencyFormat'
 
-import '../App.css'
+import './Summary.css'
 
 class Summary extends Component {
+  static defaultProps = {
+    selected: []
+  };
+  
   render() {
     const summary = Object.keys(this.props.selected).map((feature, idx) => {
-      return <SummarySelected feature={feature} idx={idx} selectedOption={this.props.selected[feature]} />;
+      const featureHash = feature + '-' + idx;
+      return <SummarySelected key={featureHash} feature={feature} idx={idx} selectedOption={this.props.selected[feature]} />;
     });
 
     const total = Object.keys(this.props.selected).reduce(

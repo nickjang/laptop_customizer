@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormFeature /> renders empty when no props supplied 1`] = `
+<fieldset
+  className="feature"
+  key="-0"
+>
+  <legend
+    className="feature__name"
+  >
+    <h3 />
+  </legend>
+</fieldset>
+`;
+
+exports[`<FormFeature /> renders feature with options when props are supplied 1`] = `
+<fieldset
+  className="feature"
+  key="Display-1"
+>
+  <legend
+    className="feature__name"
+  >
+    <h3>
+      Display
+    </h3>
+  </legend>
+  <FormFeatureOption
+    feature="Display"
+    item={
+      Object {
+        "cost": 1500,
+        "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+      }
+    }
+    itemHash="\\"name\\":\\"15.6\\"-UHD-(3840-x-2160)-60Hz-Bright-Lights-and-Knobs\\"\\"cost\\":1500"
+    key="\\"name\\":\\"15.6\\"-UHD-(3840-x-2160)-60Hz-Bright-Lights-and-Knobs\\"\\"cost\\":1500"
+    selectedFeatureName="15"
+    updateFeature={[Function]}
+  />
+  <FormFeatureOption
+    feature="Display"
+    item={
+      Object {
+        "cost": 100,
+        "name": "15",
+      }
+    }
+    itemHash="\\"name\\":\\"15\\"\\"cost\\":100"
+    key="\\"name\\":\\"15\\"\\"cost\\":100"
+    selectedFeatureName="15"
+    updateFeature={[Function]}
+  />
+</fieldset>
+`;

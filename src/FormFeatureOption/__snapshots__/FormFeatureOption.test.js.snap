@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormFeatureOption /> renders empty when no props supplied 1`] = `
+<div
+  className="feature__item"
+>
+  <input
+    checked={true}
+    className="feature__option"
+    id=""
+    name=""
+    onChange={[Function]}
+    type="radio"
+  />
+  <label
+    className="feature__label"
+    htmlFor=""
+  >
+     (
+    $0.00
+    )
+  </label>
+</div>
+`;
+
+exports[`<FormFeatureOption /> renders option when props are supplied 1`] = `
+<div
+  className="feature__item"
+>
+  <input
+    checked={false}
+    className="feature__option"
+    id="feature-1"
+    name="Display"
+    onChange={[Function]}
+    type="radio"
+  />
+  <label
+    className="feature__label"
+    htmlFor="feature-1"
+  >
+    15
+     (
+    $10.00
+    )
+  </label>
+</div>
+`;
