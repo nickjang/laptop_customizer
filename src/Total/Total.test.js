@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import Summary from './Summary';
+import Total from './Total';
 
 const selected = {
   Processor: {
@@ -23,22 +23,20 @@ const selected = {
   }
 }
 
-describe('<Summary />', () => {
+describe('<Total />', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Summary />, div);
+    ReactDOM.render(<Total />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   it('renders empty when no props supplied', () => {
-    const wrapper = shallow(<Summary />);
+    const wrapper = shallow(<Total />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
-  it('renders summary with selected options when props are supplied', () => {
-    const wrapper = shallow(
-      <Summary selected={selected} />
-    );
+  it('renders Total with the total value from selected options', () => {
+    const wrapper = shallow(<Total selected={selected} />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import App from './App';
 
@@ -67,21 +67,22 @@ describe('<App />', () => {
   });
 
   it('renders App with last option from the form clicked in Summary', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <App features={FEATURES} />
     );
-    console.log(wrapper.find('.feature').simulate('click'));
-    wrapper.find('.feature').at(0).find('.feature__option').at(0).simulate('click');
-    wrapper.find('.feature').at(0).find('.feature__option').at(1).simulate('click');
-    expect(toJson(wrapper)).toMatchSnapshot();
+    let featureName = wrapper.find('.feature__name h3').at(0).text();
+    wrapper.find('.feature').at(0).find('.feature__option').at(0).simulate('change', {target: {name: featureName, checked: true}});
+    wrapper.find('.feature').at(0).find('.feature__option').at(1).simulate('change', {target: {name: featureName, checked: true}});
   });
 
   it('renders App with last option from multiple features in Summary', () => {
-    const wrapper = shallow(<App features={FEATURES} />);
-    wrapper.find('.feature').at(0).find('.feature__option').at(0).simulate('click');
-    wrapper.find('.feature').at(0).find('.feature__option').at(1).simulate('click');
-    wrapper.find('.feature').at(1).find('.feature__option').at(0).simulate('click');
-    wrapper.find('.feature').at(1).find('.feature__option').at(1).simulate('click');
+    const wrapper = mount(<App features={FEATURES} />);
+    let featureName = wrapper.find('.feature__name h3').at(0).text();
+    wrapper.find('.feature').at(0).find('.feature__option').at(0).simulate('change', {target: {name: featureName, checked: true}});
+    wrapper.find('.feature').at(0).find('.feature__option').at(1).simulate('change', {target: {name: featureName, checked: true}});
+    featureName = wrapper.find('.feature__name h3').at(1).text();
+    wrapper.find('.feature').at(1).find('.feature__option').at(0).simulate('change', {target: {name: featureName, checked: true}});
+    wrapper.find('.feature').at(1).find('.feature__option').at(1).simulate('change', {target: {name: featureName, checked: true}});
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

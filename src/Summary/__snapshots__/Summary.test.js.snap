@@ -7,20 +7,9 @@ exports[`<Summary /> renders empty when no props supplied 1`] = `
   <h2>
     Your cart
   </h2>
-  <div
-    className="summary__total"
-  >
-    <div
-      className="summary__total__label"
-    >
-      Total
-    </div>
-    <div
-      className="summary__total__value"
-    >
-      $0.00
-    </div>
-  </div>
+  <Total
+    selected={Array []}
+  />
 </section>
 `;
 
@@ -75,19 +64,27 @@ exports[`<Summary /> renders summary with selected options when props are suppli
       }
     }
   />
-  <div
-    className="summary__total"
-  >
-    <div
-      className="summary__total__label"
-    >
-      Total
-    </div>
-    <div
-      className="summary__total__value"
-    >
-      $3,550.98
-    </div>
-  </div>
+  <Total
+    selected={
+      Object {
+        "Display": Object {
+          "cost": 1500,
+          "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+        },
+        "Operating System": Object {
+          "cost": 200,
+          "name": "Ubuntu Linux 16.04",
+        },
+        "Processor": Object {
+          "cost": 700,
+          "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+        },
+        "Video Card": Object {
+          "cost": 1150.98,
+          "name": "Toyota Corolla 1.5v",
+        },
+      }
+    }
+  />
 </section>
 `;

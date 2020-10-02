@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Total /> renders Total with the total value from selected options 1`] = `
+<div
+  className="summary__total"
+>
+  <div
+    className="summary__total__label"
+  >
+    Total
+  </div>
+  <div
+    className="summary__total__value"
+  >
+    $3,550.98
+  </div>
+</div>
+`;
+
+exports[`<Total /> renders empty when no props supplied 1`] = `
+<div
+  className="summary__total"
+>
+  <div
+    className="summary__total__label"
+  >
+    Total
+  </div>
+  <div
+    className="summary__total__value"
+  >
+    $0.00
+  </div>
+</div>
+`;
