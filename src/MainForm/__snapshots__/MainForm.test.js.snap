@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CustomizerForm /> renders empty when no props supplied 1`] = `
+exports[`<MainForm /> renders empty when no props supplied 1`] = `
 <form
   className="main__form"
 >
@@ -10,14 +10,14 @@ exports[`<CustomizerForm /> renders empty when no props supplied 1`] = `
 </form>
 `;
 
-exports[`<CustomizerForm /> renders form with features when props are supplied 1`] = `
+exports[`<MainForm /> renders form with features when props are supplied 1`] = `
 <form
   className="main__form"
 >
   <h2>
     Customize your laptop
   </h2>
-  <FormFeature
+  <Specs
     feature={
       Array [
         Object {
@@ -36,7 +36,7 @@ exports[`<CustomizerForm /> renders form with features when props are supplied 1
     selectedFeatureName="17th Generation Intel Core HB (7 Core with donut spare)"
     updateFeature={[Function]}
   />
-  <FormFeature
+  <Specs
     feature={
       Array [
         Object {
@@ -55,7 +55,7 @@ exports[`<CustomizerForm /> renders form with features when props are supplied 1
     selectedFeatureName="Ubuntu Linux 16.04"
     updateFeature={[Function]}
   />
-  <FormFeature
+  <Specs
     feature={
       Array [
         Object {
@@ -74,7 +74,7 @@ exports[`<CustomizerForm /> renders form with features when props are supplied 1
     selectedFeatureName="Toyota Corolla 1.5v"
     updateFeature={[Function]}
   />
-  <FormFeature
+  <Specs
     feature={
       Array [
         Object {

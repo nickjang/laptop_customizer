@@ -1,26 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Summary /> renders empty when no props supplied 1`] = `
+exports[`<MainSummary /> renders MainSummary with selected options when props are supplied 1`] = `
 <section
   className="main__summary"
 >
   <h2>
     Your cart
   </h2>
-  <Total
-    selected={Array []}
-  />
-</section>
-`;
-
-exports[`<Summary /> renders summary with selected options when props are supplied 1`] = `
-<section
-  className="main__summary"
->
-  <h2>
-    Your cart
-  </h2>
-  <SummarySelected
+  <Option
     feature="Processor"
     idx={0}
     key="Processor-0"
@@ -31,7 +18,7 @@ exports[`<Summary /> renders summary with selected options when props are suppli
       }
     }
   />
-  <SummarySelected
+  <Option
     feature="Operating System"
     idx={1}
     key="Operating System-1"
@@ -42,7 +29,7 @@ exports[`<Summary /> renders summary with selected options when props are suppli
       }
     }
   />
-  <SummarySelected
+  <Option
     feature="Video Card"
     idx={2}
     key="Video Card-2"
@@ -53,7 +40,7 @@ exports[`<Summary /> renders summary with selected options when props are suppli
       }
     }
   />
-  <SummarySelected
+  <Option
     feature="Display"
     idx={3}
     key="Display-3"
@@ -85,6 +72,19 @@ exports[`<Summary /> renders summary with selected options when props are suppli
         },
       }
     }
+  />
+</section>
+`;
+
+exports[`<MainSummary /> renders empty when no props supplied 1`] = `
+<section
+  className="main__summary"
+>
+  <h2>
+    Your cart
+  </h2>
+  <Total
+    selected={Array []}
   />
 </section>
 `;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import FormFeature from '../FormFeature/FormFeature';
+import Specs from '../Specs/Specs';
 
-import './CustomizerForm.css'
+import './MainForm.css'
 
 class CustomizerForm extends Component {
   static defaultProps = {
@@ -14,7 +14,7 @@ class CustomizerForm extends Component {
     const features = Object.keys(this.props.features).map((feature, idx) => {
       const featureHash = feature + '-' + idx;
       return (
-        <FormFeature key={featureHash} idx={idx} featureName={feature}
+        <Specs key={featureHash} idx={idx} featureName={feature}
           feature={this.props.features[feature]} updateFeature={this.props.updateFeature}
           selectedFeatureName={this.props.selected[feature].name} />
       );

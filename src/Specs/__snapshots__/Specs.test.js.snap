@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<FormFeature /> renders empty when no props supplied 1`] = `
+exports[`<Specs /> renders empty when no props supplied 1`] = `
 <fieldset
   className="feature"
   key="-0"
@@ -13,7 +13,7 @@ exports[`<FormFeature /> renders empty when no props supplied 1`] = `
 </fieldset>
 `;
 
-exports[`<FormFeature /> renders feature with options when props are supplied 1`] = `
+exports[`<Specs /> renders feature with options when props are supplied 1`] = `
 <fieldset
   className="feature"
   key="Display-1"
@@ -25,7 +25,7 @@ exports[`<FormFeature /> renders feature with options when props are supplied 1`
       Display
     </h3>
   </legend>
-  <FormFeatureOption
+  <Parts
     feature="Display"
     item={
       Object {
@@ -38,7 +38,7 @@ exports[`<FormFeature /> renders feature with options when props are supplied 1`
     selectedFeatureName="15"
     updateFeature={[Function]}
   />
-  <FormFeatureOption
+  <Parts
     feature="Display"
     item={
       Object {

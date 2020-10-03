@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import SummarySelected from '../SummarySelected/SummarySelected';
+import Option from '../Option/Option';
 import Total from '../Total/Total';
-import './Summary.css'
+import './MainSummary.css'
 
-class Summary extends Component {
+class MainSummary extends Component {
   static defaultProps = {
     selected: []
   };
@@ -11,7 +11,7 @@ class Summary extends Component {
   render() {
     const summary = Object.keys(this.props.selected).map((feature, idx) => {
       const featureHash = feature + '-' + idx;
-      return <SummarySelected key={featureHash} feature={feature} idx={idx} selectedOption={this.props.selected[feature]} />;
+      return <Option key={featureHash} feature={feature} idx={idx} selectedOption={this.props.selected[feature]} />;
     });
 
     return (
@@ -24,4 +24,4 @@ class Summary extends Component {
   }
 }
 
-export default Summary;
+export default MainSummary;

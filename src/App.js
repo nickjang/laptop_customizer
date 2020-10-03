@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import CustomizerForm from './CustomizerForm/CustomizerForm';
-import Summary from './Summary/Summary';
+import MainForm from './MainForm/MainForm';
+import MainSummary from './MainSummary/MainSummary';
+import FEATURES from './FEATURES'
 
 import './App.css';
 
 class App extends Component {
-  static defaultProps = {
-    features: []
-  };
-
   state = {
     selected: {
       Processor: {
@@ -45,9 +42,9 @@ class App extends Component {
           <h1>ELF Computing | Laptops</h1>
         </header>
         <main>
-          <CustomizerForm features={this.props.features} selected={this.state.selected} 
+          <MainForm features={FEATURES} selected={this.state.selected} 
             updateFeature={this.updateFeature} />
-          <Summary selected={this.state.selected} />
+          <MainSummary selected={this.state.selected} />
         </main>
       </div>
     );

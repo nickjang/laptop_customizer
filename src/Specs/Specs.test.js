@@ -2,17 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import FormFeature from './FormFeature';
+import Specs from './Specs';
 
-describe('<FormFeature />', () => {
+describe('<Specs />', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<FormFeature />, div);
+    ReactDOM.render(<Specs />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   it('renders empty when no props supplied', () => {
-    const wrapper = shallow(<FormFeature />);
+    const wrapper = shallow(<Specs />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
@@ -29,7 +29,7 @@ describe('<FormFeature />', () => {
     ];
     
     const wrapper = shallow(
-      <FormFeature key="feature-1" idx={1} featureName="Display"
+      <Specs key="feature-1" idx={1} featureName="Display"
         feature={feature} updateFeature={() => { }} selectedFeatureName="15" />
     );
     expect(toJson(wrapper)).toMatchSnapshot();

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import USCurrencyFormat from '../USCurrencyFormat'
 
-import './SummarySelected.css'
+import './Option.css'
 
-class SummarySelected extends Component {
+class Option extends Component {
   static defaultProps = {
     feature: [],
     selectedOption: {}
@@ -23,4 +23,4 @@ class SummarySelected extends Component {
   }
 }
 
-export default SummarySelected;
+export default Option;

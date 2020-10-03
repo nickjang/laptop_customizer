@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SummarySelected /> renders empty when no props supplied 1`] = `
+exports[`<Option /> renders empty when no props supplied 1`] = `
 <div
   className="summary__option"
 >
@@ -20,7 +20,7 @@ exports[`<SummarySelected /> renders empty when no props supplied 1`] = `
 </div>
 `;
 
-exports[`<SummarySelected /> renders selected option when props are supplied 1`] = `
+exports[`<Option /> renders selected option when props are supplied 1`] = `
 <div
   className="summary__option"
 >

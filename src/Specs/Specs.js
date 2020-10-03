@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import FormFeatureOption from '../FormFeatureOption/FormFeatureOption';
+import Parts from '../Parts/Parts';
 import slugify from 'slugify';
 
-import './FormFeature.css'
+import './Specs.css'
 
-class FormFeature extends Component {
+class Specs extends Component {
   static defaultProps = {
     idx: 0,
     featureName: '',
@@ -18,7 +18,7 @@ class FormFeature extends Component {
     const options = this.props.feature.map(item => {
       const itemHash = slugify(JSON.stringify(item));
       return (
-        <FormFeatureOption key={itemHash} itemHash={itemHash} feature={this.props.featureName} item={item}
+        <Parts key={itemHash} itemHash={itemHash} feature={this.props.featureName} item={item}
           selectedFeatureName={this.props.selectedFeatureName} updateFeature={this.props.updateFeature} />
       );
     });
@@ -34,4 +34,4 @@ class FormFeature extends Component {
   }
 }
 
-export default FormFeature;
+export default Specs;

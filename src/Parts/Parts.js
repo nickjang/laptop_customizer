@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import slugify from 'slugify';
 import USCurrencyFormat from '../USCurrencyFormat';
 
-import './FormFeatureOption.css'
+import './Parts.css'
 
-class FormFeatureOption extends Component {
+class Parts extends Component {
   static defaultProps = {
     itemHash: '',
     feature: '',
@@ -35,4 +35,4 @@ class FormFeatureOption extends Component {
   }
 }
 
-export default FormFeatureOption;
+export default Parts;

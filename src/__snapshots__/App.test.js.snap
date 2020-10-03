@@ -77,7 +77,7 @@ exports[`<App /> renders App with form and summary when props are supplied 1`] =
       }
       updateFeature={[Function]}
     />
-    <Summary
+    <MainSummary
       selected={
         Object {
           "Display": Object {
@@ -232,7 +232,7 @@ exports[`<App /> renders App with last option from multiple features in Summary 
           <h2>
             Customize your laptop
           </h2>
-          <FormFeature
+          <Specs
             feature={
               Array [
                 Object {
@@ -262,7 +262,7 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                   Processor
                 </h3>
               </legend>
-              <FormFeatureOption
+              <Parts
                 feature="Processor"
                 item={
                   Object {
@@ -296,8 +296,8 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                     )
                   </label>
                 </div>
-              </FormFeatureOption>
-              <FormFeatureOption
+              </Parts>
+              <Parts
                 feature="Processor"
                 item={
                   Object {
@@ -331,10 +331,10 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                     )
                   </label>
                 </div>
-              </FormFeatureOption>
+              </Parts>
             </fieldset>
-          </FormFeature>
-          <FormFeature
+          </Specs>
+          <Specs
             feature={
               Array [
                 Object {
@@ -364,7 +364,7 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                   Operating System
                 </h3>
               </legend>
-              <FormFeatureOption
+              <Parts
                 feature="Operating System"
                 item={
                   Object {
@@ -398,8 +398,8 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                     )
                   </label>
                 </div>
-              </FormFeatureOption>
-              <FormFeatureOption
+              </Parts>
+              <Parts
                 feature="Operating System"
                 item={
                   Object {
@@ -433,10 +433,10 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                     )
                   </label>
                 </div>
-              </FormFeatureOption>
+              </Parts>
             </fieldset>
-          </FormFeature>
-          <FormFeature
+          </Specs>
+          <Specs
             feature={
               Array [
                 Object {
@@ -466,7 +466,7 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                   Video Card
                 </h3>
               </legend>
-              <FormFeatureOption
+              <Parts
                 feature="Video Card"
                 item={
                   Object {
@@ -500,8 +500,8 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                     )
                   </label>
                 </div>
-              </FormFeatureOption>
-              <FormFeatureOption
+              </Parts>
+              <Parts
                 feature="Video Card"
                 item={
                   Object {
@@ -535,10 +535,10 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                     )
                   </label>
                 </div>
-              </FormFeatureOption>
+              </Parts>
             </fieldset>
-          </FormFeature>
-          <FormFeature
+          </Specs>
+          <Specs
             feature={
               Array [
                 Object {
@@ -568,7 +568,7 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                   Display
                 </h3>
               </legend>
-              <FormFeatureOption
+              <Parts
                 feature="Display"
                 item={
                   Object {
@@ -602,8 +602,8 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                     )
                   </label>
                 </div>
-              </FormFeatureOption>
-              <FormFeatureOption
+              </Parts>
+              <Parts
                 feature="Display"
                 item={
                   Object {
@@ -637,12 +637,12 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                     )
                   </label>
                 </div>
-              </FormFeatureOption>
+              </Parts>
             </fieldset>
-          </FormFeature>
+          </Specs>
         </form>
       </CustomizerForm>
-      <Summary
+      <MainSummary
         selected={
           Object {
             "Display": Object {
@@ -670,7 +670,7 @@ exports[`<App /> renders App with last option from multiple features in Summary 
           <h2>
             Your cart
           </h2>
-          <SummarySelected
+          <Option
             feature="Processor"
             idx={0}
             key="Processor-0"
@@ -701,8 +701,8 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                 $1,200.00
               </div>
             </div>
-          </SummarySelected>
-          <SummarySelected
+          </Option>
+          <Option
             feature="Operating System"
             idx={1}
             key="Operating System-1"
@@ -733,8 +733,8 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                 $300.00
               </div>
             </div>
-          </SummarySelected>
-          <SummarySelected
+          </Option>
+          <Option
             feature="Video Card"
             idx={2}
             key="Video Card-2"
@@ -765,8 +765,8 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                 $1,150.98
               </div>
             </div>
-          </SummarySelected>
-          <SummarySelected
+          </Option>
+          <Option
             feature="Display"
             idx={3}
             key="Display-3"
@@ -797,7 +797,7 @@ exports[`<App /> renders App with last option from multiple features in Summary 
                 $1,500.00
               </div>
             </div>
-          </SummarySelected>
+          </Option>
           <Total
             selected={
               Object {
@@ -836,7 +836,7 @@ exports[`<App /> renders App with last option from multiple features in Summary 
             </div>
           </Total>
         </section>
-      </Summary>
+      </MainSummary>
     </main>
   </div>
 </App>
@@ -853,7 +853,50 @@ exports[`<App /> renders empty when no props supplied 1`] = `
   </header>
   <main>
     <CustomizerForm
-      features={Array []}
+      features={
+        Object {
+          "Display": Array [
+            Object {
+              "cost": 1500,
+              "name": "15.6\\" UHD (3840 x 2160) 60Hz Bright Lights and Knobs",
+            },
+            Object {
+              "cost": 1400,
+              "name": "15.3\\" HGTV (3840 x 2160) Home makeover edition",
+            },
+          ],
+          "Operating System": Array [
+            Object {
+              "cost": 200,
+              "name": "Ubuntu Linux 16.04",
+            },
+            Object {
+              "cost": 300,
+              "name": "Bodhi Linux",
+            },
+          ],
+          "Processor": Array [
+            Object {
+              "cost": 700,
+              "name": "17th Generation Intel Core HB (7 Core with donut spare)",
+            },
+            Object {
+              "cost": 1200,
+              "name": "Professor X AMD Fire Breather with sidewinder technology",
+            },
+          ],
+          "Video Card": Array [
+            Object {
+              "cost": 1150.98,
+              "name": "Toyota Corolla 1.5v",
+            },
+            Object {
+              "cost": 1345,
+              "name": "Mind mild breeze 2000",
+            },
+          ],
+        }
+      }
       selected={
         Object {
           "Display": Object {
@@ -876,7 +919,7 @@ exports[`<App /> renders empty when no props supplied 1`] = `
       }
       updateFeature={[Function]}
     />
-    <Summary
+    <MainSummary
       selected={
         Object {
           "Display": Object {

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<FormFeatureOption /> renders empty when no props supplied 1`] = `
+exports[`<Parts /> renders empty when no props supplied 1`] = `
 <div
   className="feature__item"
 >
@@ -23,7 +23,7 @@ exports[`<FormFeatureOption /> renders empty when no props supplied 1`] = `
 </div>
 `;
 
-exports[`<FormFeatureOption /> renders option when props are supplied 1`] = `
+exports[`<Parts /> renders option when props are supplied 1`] = `
 <div
   className="feature__item"
 >
